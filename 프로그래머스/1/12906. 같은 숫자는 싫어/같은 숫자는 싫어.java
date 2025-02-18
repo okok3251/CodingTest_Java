@@ -5,22 +5,22 @@ public class Solution {
         int state = -1;
         int count = 0;
         for(int i=0; i<arr.length; i++){
-            if(arr[i] == state){
-                continue;
+            if(arr[i] != state){
+                state = arr[i];
+                count ++;
             }
-            state = arr[i];
-            count ++;
+            
         }
         int[] answer = new int[count];
         int idx = 0;
         state = -1;
         for(int i=0; i<arr.length; i++){
-            if(arr[i] == state){
-                continue;
+            if(arr[i] != state){
+                state = arr[i];
+                answer[idx] = arr[i];
+                idx ++;;
             }
-            state = arr[i];
-            answer[idx] = arr[i];
-            idx ++;
+            
         }
         
         
