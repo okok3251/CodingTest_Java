@@ -6,7 +6,7 @@ class Solution {
         }
         try{
             Integer.parseInt(s);
-        }catch(NumberFormatException ex){
+        }catch(NumberFormatException e){
             return false;
         }
         return answer;
