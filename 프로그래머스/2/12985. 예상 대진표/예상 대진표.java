@@ -3,8 +3,8 @@ class Solution {
         int answer = 0;
 
         while (a != b) {
-            a = (a + 1) >> 1; 
-            b = (b + 1) >> 1; 
+            a = (a + 1) >> 1;
+            b = (b + 1) >> 1;
             answer++;
         }
 
