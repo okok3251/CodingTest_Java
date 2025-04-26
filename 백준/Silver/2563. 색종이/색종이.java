@@ -17,8 +17,8 @@ public class Main {
         for(int i=0; i<T; i++){
             int[] xy = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             coordinate.add(xy);
-            int x = xy[0]+10;
-            int y = xy[1]+10;
+            int x = xy[0];
+            int y = xy[1];
             if(x > max_X){
                 max_X = x;
             }
@@ -26,7 +26,7 @@ public class Main {
                 max_Y = y;
             }
         }
-        int[][] boundary = new int[max_Y+1][max_X+1];
+        int[][] boundary = new int[max_Y+10][max_X+10];
         for(int[] coor : coordinate){
             int sx = coor[0];
             int sy = coor[1];
